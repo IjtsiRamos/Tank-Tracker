@@ -1,0 +1,148 @@
+body {
+  background-color: #f8f8f8; /* Use a neutral background color */
+  color: black;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.post__username {
+  margin: 5px 0 20px 0;
+}
+
+.post__body {
+  margin: 10px 0;
+}
+
+.post__date {
+  color: gray;
+}
+
+.div-post {
+  font-size: 20px;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #f5f5f5; /* Use a neutral color for the section background */
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.graph-container {
+  background-color: #ffffff; /* Use a neutral color for the graph container */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.table-container {
+  background-color: #ffffff; /* Use a neutral color for the table container */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.text-container {
+  background-color: #ffffff; /* Use a neutral color for the text container */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-container button {
+  margin-right: 10px;
+}
+
+.navbar {
+  padding: 15px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.col-md-6 {
+  margin-bottom: 30px;
+  flex: 1; /* Add desired margin */
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-left: 20px; 
+  display: flex;
+  align-items: center;/* Add right margin to create space */
+}
+
+
+.navbar-nav .nav-link {
+  margin-left: 20px; /* Add left margin to create space */
+  margin-right: 20px; /* Add right margin to create space */
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 30px; /* Adjust the height as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+}

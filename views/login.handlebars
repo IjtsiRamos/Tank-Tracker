@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">
+    <span class="brand-text">TANK TRACKER</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" id="homeLink" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item login">
+        <a class="nav-link" id='loginLink' href="/api/user/login">Login</a>
+      </li>
+      <li class="nav-item logout">
+        <a class="nav-link" id='logoutLink' href="/api/user/logout" >Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<link rel="stylesheet" href="/style.css">
+<section class='container' style='padding:20px'>
+  <div class="row justify-content-center">
+    <div class="login-card">
+      <h2 class="page-title">Login</h2>
+      <form class="form login-form">
+        <div class="form-group">
+          <label for="email-login">Email:</label>
+          <input class="form-input" type="text" id="email-login" />
+        </div>
+        <div class="form-group">
+          <label for="password-login">Password:</label>
+          <input class="form-input" type="password" id="password-login" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="signup-card">
+      <h2 class="page-title">Signup</h2>
+      <form class="form signup-form">
+        <div class="form-group">
+          <label for="username-signup">Username:</label>
+          <input class="form-input" type="text" id="username-signup" />
+        </div>
+        <div class="form-group">
+          <label for="email-signup">Email:</label>
+          <input class="form-input" type="text" id="email-signup" />
+        </div>
+        <div class="form-group">
+          <label for="password-signup">Password:</label>
+          <input class="form-input" type="password" id="password-signup" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">Signup</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="/login.js"></script>
