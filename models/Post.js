@@ -16,10 +16,6 @@ Post.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      posting_date: {
-        type: DataTypes.DATE,
-        allowNull: false,
-      },
       waterLevel: {
         type: DataTypes.FLOAT,
         allowNull: false,

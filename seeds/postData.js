@@ -21,19 +21,16 @@ const postdata = [
   },
   {
     name: 'Tank 2',
-    posting_date: '2023-10-04',
     waterLevel: 30.0,
     user_id: 2,
   },
   {
     name: 'Tank 2',
-    posting_date: '2023-10-05',
     waterLevel: 24.0,
     user_id: 2,
   },
   {
     name: 'Tank 2',
-    posting_date: '2023-10-06',
     waterLevel: 20.3,
     user_id: 2,
   },

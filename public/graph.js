@@ -11,7 +11,7 @@ const drawGraph = async () => {
     const data = await response.json();
 
     for (const row of data) {
-      const date = new Date(row.posting_date);
+      const date = new Date(row.createdAt);
       const xValue = date.toLocaleDateString(); // Convert the date to a string representation
       const yValue = row.waterLevel;
 

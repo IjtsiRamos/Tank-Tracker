@@ -37,11 +37,11 @@
               </tr>
             </thead>
             <tbody>
-              {{#each posts limit=3 as |entries|}}
-              <tr>
-                <td>{{entries.posting_date}}</td>
-                <td>{{entries.waterLevel}} ml</td>
-              </tr>
+              {{#each posts}}
+                <tr>
+                  <td>{{createdAt}}</td>
+                  <td>{{waterLevel}} ml</td>
+                </tr>
               {{/each}}
             </tbody>
           </table>
