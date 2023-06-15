@@ -51,7 +51,7 @@
           </div>
           <h2 class="text-center">The level of water today is:</h2>
           {{#each posts}}
-            {{#if @last}}
+            {{#if @first}}
             <p class="text-center">{{waterLevel}} </p>
             {{/if}}
           {{/each}}
