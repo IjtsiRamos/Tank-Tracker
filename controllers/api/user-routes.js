@@ -81,20 +81,39 @@ router.post('/login', async (req, res) => {
     }
 });
 
-// When Logout
-router.post('/logout',async (req, res) => {
-    try{
-        if (req.session.loggedIn) {
-            req.session.destroy(() => {
-                res.status(204).end();
-            });
-        } else {
-            res.status(404).end();
-        }
-    } catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-    }
-});
 
+ router.post('/logout', async (req, res) => {
+    try {
+      if (req.session.loggedIn) {
+        req.session.destroy(() => {
+          res.status(204).end();
+        });
+      } else {
+        res
+            .status(400)
+            .json({ message: "Please log in first!" });
+        return;
+      }
+    } catch (err) {
+      console.log(err);
+      res.status(404).json({ message: err.message });
+    }
+  });
+ 
+  router.get('/logout', async (req, res) => {
+    try {
+      if (req.session.loggedIn) {
+        req.session.destroy(() => {
+          res.redirect('/api/user/login'); // Redirect to the desired API endpoint
+        });
+      } else {
+        res.redirect('/api/user/login');
+      }
+    } catch (err) {
+      console.log(err);
+      res.status(404).json({ message: err.message });
+    }
+  });
+ 
+ 
 module.exports = router;
