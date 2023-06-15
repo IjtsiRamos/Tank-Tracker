@@ -1,13 +1,15 @@
 
 async function postData(status) {
+  var data = new URLSearchParams();
+  data.append("estado", status);
   return await fetch("https://maker.ifttt.com/trigger/switch_pump/json/with/key/nSSFKLha20-2cQC3EK0ztO7wfFEUCsxiM7UYGf-C0xx", {
       method: 'POST',
       headers: {
-          "Content-Type": "application/json"
+        "Content-Type": "application/x-www-form-urlencoded"
       },
       mode: "no-cors",
-      body: JSON.stringify({estado: status})
-})
+      body: data.toString()
+    })
 }
 
 // Event listener for the "ON" button
