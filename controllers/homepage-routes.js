@@ -13,6 +13,8 @@ router.get('/', async (req, res) => {
     const loggedInUserId = req.session.user_id;
     const dbPostData = await Post.findAll({
       where: { user_id: loggedInUserId },
+      limit: 6,
+      order: [['createdAt', 'DESC']],
     });
 
     const posts = dbPostData.map((post) => post.get({ plain: true }));
