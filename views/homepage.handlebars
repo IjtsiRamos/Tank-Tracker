@@ -21,7 +21,23 @@
 </nav>
 
 <section>
-  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            {{#each posts}}
+              {{#if @first}}
+                <img src="/{{imgWater}}.jpeg" alt="Water Image" class="waterimage" id="water-image">
+              {{/if}}
+            {{/each}}
+            </div>
+        </div>
+        <div class="col-md-6">      
+          <p class="water-text" id="water-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div class="table-container">
@@ -42,12 +58,17 @@
               {{/each}}
             </tbody>
           </table>
+            <button class="btn btn-primary" id="email">Send data</button>
         </div>
       </div>
       <div class="col-md-6">
         <div class="text-container">
           <div class="image-container">
-            <img src="/wt.jpeg" alt="Random Image" class="image">
+            {{#each posts}}
+              {{#if @first}}
+                <img src="/Tinaco{{waterLevel}}.png" alt="Image" class="image" id="{{waterLevel}}">
+              {{/if}}
+            {{/each}}
           </div>
           <h2 class="text-center">The level of water today is:</h2>
           {{#each posts}}

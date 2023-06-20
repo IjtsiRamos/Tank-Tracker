@@ -2,36 +2,38 @@ const { Post} = require('../models');
 
 const postdata = [
   {
-    name: 'Tank 1',
-    posting_date: '2023-10-04',
-    waterLevel: 15.6,
-    user_id: 1,
-  },
-  {
-    name: 'Tank 1',
-    posting_date: '2023-10-05',
-    waterLevel: 17.0,
-    user_id: 1,
-  },
-  {
-    name: 'Tank 1',
-    posting_date: '2023-10-06',
-    waterLevel: 18.0,
-    user_id: 1,
-  },
-  {
     name: 'Tank 2',
-    waterLevel: 30.0,
+    waterLevel: 5,
+    waterAvailable: 0,
+    imgWater: 0,
     user_id: 2,
   },
   {
     name: 'Tank 2',
-    waterLevel: 24.0,
+    waterLevel: 3,
+    waterAvailable: 0,
+    imgWater: 0,
     user_id: 2,
   },
   {
     name: 'Tank 2',
-    waterLevel: 20.3,
+    waterLevel: 2,
+    waterAvailable: 0,
+    imgWater: 0,
+    user_id: 2,
+  },
+  {
+    name: 'Tank 2',
+    waterLevel: 2,
+    waterAvailable: 0,
+    imgWater: 0,
+    user_id: 2,
+  },
+  {
+    name: 'Tank 2',
+    waterLevel: 2,
+    waterAvailable: 1,
+    imgWater: 1,
     user_id: 2,
   },
 

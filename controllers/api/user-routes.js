@@ -15,6 +15,7 @@ router.post('/signup', async (req, res) => {
             req.session.loggedIn = true;
             req.session.user_id= dbUserData.id;
             req.session.username= dbUserData.username;
+            req.session.email= dbUserData.email;
 
             res.status(200).json(dbUserData);
         });
@@ -68,6 +69,7 @@ router.post('/login', async (req, res) => {
             req.session.loggedIn = true;
             req.session.user_id= dbUserData.id;
             req.session.username= dbUserData.username;
+            req.session.email= dbUserData.email;
        
             res
                 .status(200)

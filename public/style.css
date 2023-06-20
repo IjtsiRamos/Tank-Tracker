@@ -146,3 +146,14 @@ section {
   height: 30px; /* Adjust the height as needed */
   margin-right: 10px; /* Adjust the margin as needed */
 }
+.waterimage {
+  height: 55%;
+  width: 50%;
+  align-items: center;
+}
+.water-text{
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  color: red;
+}

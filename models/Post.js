@@ -20,6 +20,14 @@ Post.init(
         type: DataTypes.FLOAT,
         allowNull: false,
       }, 
+      waterAvailable: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+      }, 
+      imgWater: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      }, 
       user_id: {
         type: DataTypes.INTEGER,
         references: {
@@ -27,7 +35,7 @@ Post.init(
           key: 'id',
           unique:false
         }
-      }
+      },
     },
     {
       sequelize,
