@@ -53,7 +53,7 @@
               {{#each posts}}
                 <tr>
                   <td>{{createdAt}}</td>
-                  <td>{{waterLevel}} </td>
+                  <td>{{waterLevel}}% </td>
                 </tr>
               {{/each}}
             </tbody>
@@ -73,7 +73,7 @@
           <h2 class="text-center">The level of water today is:</h2>
           {{#each posts}}
             {{#if @first}}
-            <p class="text-center">{{waterLevel}} </p>
+            <p class="text-center">{{waterLevel}}% </p>
             {{/if}}
           {{/each}}
           <div class="btn-container">
